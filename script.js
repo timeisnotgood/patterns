@@ -12,6 +12,8 @@ function patter1(n){
 function patter2(n){
   for (let i =1 ; i<=n;i++){
     let patern = ' '
+
+    
     for(let j =1; j<=i;j++){
       patern += "* "
     }
