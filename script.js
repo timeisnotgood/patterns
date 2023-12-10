@@ -108,7 +108,62 @@ function patter10(n){
   }
 }
 
+function patter11(n){
+  for (let i =0 ; i<n;i++){
+    let patern = ' '
+    let start = 0
+    if(i % 2 ==0) start = 0
+    else start = 1
+    for(let j =0 ; j<=i ;j++){
+      start = 1- start
+      patern += start
+    }
+    console.log(patern);
+  }
+}
+
+
+function patter12(n){
+  for (let i =1 ; i<=n;i++){
+    let patern = ' '
+    for(let j =1 ; j<=i ;j++){
+      patern += j
+    }
+
+    let space = 2 *n -i-i
+    for(let s = 1;s<=space;s++){
+      patern += " "
+    }
+
+    for(let k = 1;k<=i;k++){
+      let n = i-k+1
+      patern += n
+    }
+    console.log(patern);
+  }
+}
+
+
+function patter13(n){
+  for (let i =1 ; i<=n;i++){
+    let patern = ' '
+    let start = 1
+    if( i == 4) start = 3
+    else if ( i==5) start =6
+
+    for(let j = 0;j<i;j++){
+      if(i > 2){
+        patern += i+j+start
+      }else{
+      patern += i+j
+      }
+    }
+    console.log(patern);
+  }
+}
+
+
 
 (()=>{
-  // patter10(10)
+  patter13(5)
 })()
