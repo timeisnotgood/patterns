@@ -162,8 +162,63 @@ function patter13(n){
   }
 }
 
+function patter14(n){
+  for(let i =0;i<n;i++){
+    let patern = ' '
+    for(let j=0;j<=i;j++ ){
+      let a = ["A","B","C","D","E"]
+      patern += a[j]
+    }
+    console.log(patern);
+  }
+}
+
+function patter15(n){
+  for(let i =0;i<=n;i++){
+    let patern = ' '
+    for(let j=0;j<=n-i;j++ ){
+      let a = ["A","B","C","D","E"]
+      patern += a[j]
+    }
+    console.log(patern);
+  }
+}
+
+function patter16(n){
+  for(let i =0;i<=n;i++){
+    let patern = ' '
+    for(let j=0;j<=i;j++){
+      let a = ["A","B","C","D","E"]
+      patern += a[i]
+    }
+    console.log(patern);
+  }
+}
+
+function patter17(n){
+
+  for(let i = 0;i<n;i++){
+    let patern = ' '
+
+    for(let s = 0;s <=n-i;s++){
+      patern += " "
+    }
+    for(let j=0;j<=i;j++){
+      let a = ["A","B","C","D","E"]
+      patern += a[j]
+    }
+
+    for(let a = 1;a<=i;a++){
+      let arr = ["A","B","C","D","E"]
+      patern += arr[i-a] 
+    }
+    console.log(patern);
+  }
+
+}
+
 
 
 (()=>{
-  patter13(5)
+  patter17(4)
 })()
