@@ -217,8 +217,63 @@ function patter17(n){
 
 }
 
+function patter18(n){
+
+  for(let i = 0;i<n;i++){
+    let patern = ' '
+    let arr = ["A","B","C","D","E"]
+    for(let j =0;j<=i;j++ ){
+      patern += arr[4-i+j]
+    }
+    console.log(patern);
+  }
+
+}
+
+function patter19(n){
+
+  for(let i = 1;i<=n;i++){
+    let patern = ' '
+
+    // start
+    for(let j =1;j<=n-i+1;j++ ){
+      patern += "*"
+    }
+    
+    // Space
+    for(let s =1;s<=i-1;s++){
+      patern += "  "
+    }
+
+    //start
+    for(let j =1;j<=n-i+1;j++ ){
+      patern += "*"
+    }
+    console.log(patern);
+  }
+
+  //down 
+  for(let i = 1;i<=n;i++){
+    let patern =' '
+    //start
+    for(let one = 1;one<=i;one++){
+      patern += "*"
+    }
+    //space
+    for(let two = 1;two<=n-i;two++){
+      patern += "  "
+    }
+    //start
+    for(let three = 1;three <= i;three++){
+      patern += "*"
+    }
+    console.log(patern);
+  }
+
+}
+
 
 
 (()=>{
-  patter17(4)
+  patter19(5)
 })()
